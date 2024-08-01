@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style class="style">
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        .obs{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: darkslategray;
+            opacity: 0.3;
+        }
+        .txt{
+             font-family: ttt;
+            font-size: 700%;
+            color: gold;
+            text-align:center;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+                }
+        .label{
+            position: absolute;
+            top: 20%;
+            left: 0%;
+            width: 100%;
+            height: 80%;
+            border: none;
+            
+
+        }
+        .az{
+            text-align:center;
+            position: absolute;
+            top: 63%;
+            left: 35%;
+             width: 30%;
+             height: 10%;
+             font-size: 50px;
+             font-family: ft2;
+             color:black ;     
+             background-color: aqua;
+             border-radius: 20px;  
+             border-color: goldenrod;     
+        }
+        .ms{
+            text-align:center;
+            
+            font-size: 50px;
+            font-family: ft2;
+             color: black;      
+            position: absolute;
+            top: 50%;
+            left: 35%;
+             width: 30%;
+             height: 10%;
+             background-color: aqua;
+             border-radius: 20px;    
+             border-color: goldenrod;   
+         
+        }
+        @font-face {
+            font-family:ttt ;
+            src: url("1.ttf");
+        }
+        @font-face {
+            font-family: ft2;
+            src: url("2.ttf");
+        }
+       .div1{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        background-image: url('1.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       .ms:hover{
+        animation:ani 1s forwards;
+       }
+       .az:hover{
+        animation:ani 1s forwards;
+       }
+       @keyframes ani {
+        from{
+            border-color: goldenrod;
+            background-color: aqua;
+            color: black;
+            opacity: 1.0;
+        }
+        to{
+            border-color: aqua;
+            background-color: goldenrod;
+            opacity: 0.7;
+        }
+
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="div1" id="div1"></div>
+    
+    <div class="label"><div class="obs"></div>
+><label class="txt">القرآن الكريم</label>
+</div>
+<button class="ms" id="ms">المصحف</button>
+    <button class="az" id="az">الأذكار</button>
+    <script>
+        document.getElementById('ms').addEventListener("click",fun =>{
+            window.open("sewar.html", "_blank")
+        })
+            </script>
+</body>
+</html>
